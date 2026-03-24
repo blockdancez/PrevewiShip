@@ -1,161 +1,236 @@
 # PreviewShip
 
-> 部署预览，即时分享。从编辑器、终端、AI 智能体或浏览器——一步拿链接。
+> Deploy previews, share instantly. From your editor, terminal, AI agent, or browser — one step to a live link.
 
-PreviewShip 是面向开发者的前端预览部署与分享平台。支持 **VS Code/Cursor 扩展**、**CLI**、**MCP Server（AI 智能体原生集成）** 和**网页控制台**四种部署方式，后端自动部署到 Vercel 并返回可访问的预览 URL。
+PreviewShip is a frontend preview deployment and sharing platform for developers. Deploy your static site and get a shareable preview URL in seconds — no Git, no CI/CD, no complex configuration.
 
-## 核心能力
+## Open Source Packages
 
-- **VS Code / Cursor 扩展**：一键打包 workspace → 上传 → 部署 → 拿到预览链接
-- **CLI**（`npx previewship deploy`）：终端一行命令部署，`--json` 输出适配 AI 智能体和 CI 管道
-- **MCP Server**（`previewship-mcp`）：让 Claude Code、Cursor、Windsurf 等 AI 编程智能体通过 MCP 协议原生调用部署
-- **Web 控制台**：拖拽上传 zip 部署、管理 API Keys、查看用量与部署历史、订阅 Pro
-- **后端 API**：鉴权、配额控制（日/月）、并发限制、Stripe 订阅同步
-- **异步 Worker**：Redis Streams 队列消费、Vercel API 调用、并发信号量
+PreviewShip provides three open-source client packages:
 
-## 部署方式
+| Package | npm | Description |
+|---------|-----|-------------|
+| [CLI](#cli) | [`previewship`](https://www.npmjs.com/package/previewship) | Deploy from the terminal with one command |
+| [MCP Server](#mcp-server) | [`previewship-mcp`](https://www.npmjs.com/package/previewship-mcp) | Native tool integration for AI coding agents |
+| [VS Code Extension](#vs-code--cursor-extension) | [Marketplace](https://marketplace.visualstudio.com/items?itemName=previewship.previewship) | One-click deploy from your editor |
 
-| 方式 | 命令 / 操作 | 适用场景 |
-|------|------------|---------|
-| VS Code / Cursor 扩展 | 命令面板 → `PreviewShip: Deploy` | 编辑器内一键部署 |
-| CLI | `npx previewship deploy ./dist` | 终端、脚本、CI/CD |
-| MCP Server | AI 对话中说"部署到 PreviewShip" | Claude Code / Cursor / Windsurf |
-| 控制台上传 | 拖拽 zip 到网页 | 零工具依赖 |
+## Deployment Methods
 
-## 套餐
+| Method | Command / Action | Best For |
+|--------|-----------------|----------|
+| CLI | `npx previewship deploy ./dist` | Terminal, scripts, CI/CD |
+| MCP Server | Say "deploy to PreviewShip" in AI chat | Claude Code, Cursor, Windsurf |
+| VS Code / Cursor Extension | Command Palette → `PreviewShip: Deploy` | Editor-first workflow |
+| Web Console | Drag & drop zip at [previewship.com](https://previewship.com) | Zero-tool deployment |
 
-| 项目 | Free | Pro（月付） | Pro（年付） |
-|------|-----:|----------:|----------:|
-| 价格 | $0 | $9/月 | $84/年（$7/月） |
-| 项目数 | 1 | 8 | 12 |
-| 每日部署 | 5 | 20 | 35 |
-| 每月部署 | 20 | 200 | 350 |
-| 并发部署 | 1 | 3 | 3 |
-| 单次上传上限 | 15 MB | 50 MB | 80 MB |
-| 月度上传总量 | 200 MB | 2 GB | 4 GB |
-| 预览过期 | 7 天 | 30 天 | 365 天 |
-| 每项目活跃预览 | 5 | 25 | 80 |
-| 部署历史可见 | 14 天 | 120 天 | 365 天 |
-| 构建日志可见 | 7 天 | 30 天 | 180 天 |
-| API Key | 1 个 | 1 个 | 1 个 |
+---
 
-Free 默认启用；Pro 仅在 Stripe subscription `active` 时生效；取消/过期回落 Free。不提供 trial。
+## CLI
 
-## 技术栈
+One-command deploy from any terminal. Supports JSON output for AI agents and CI pipelines.
 
-| 层 | 技术 |
-|----|------|
-| Backend | Java 21 / Spring Boot 3.x / Maven |
-| 数据 | PostgreSQL + Redis |
-| 鉴权 | 插件/CLI 端 API Key / 控制台 Session + CSRF |
-| 队列 | Redis Streams |
-| 部署 | Vercel REST API |
-| 支付 | Stripe（Checkout + Webhook） |
-| Console | Vite 6 + React 19 + TypeScript + Tailwind CSS 4 + i18next（8 语言） |
-| CLI | TypeScript / Node.js（npm: `previewship`） |
-| MCP Server | TypeScript / MCP SDK（npm: `previewship-mcp`） |
-| Extension | TypeScript / VS Code Extension API |
-| 基础设施 | 阿里云 ACK（K8s） |
-
-## 项目结构
-
-```
-previewship/
-├── docs/                    # 产品与技术文档
-│   ├── prd.md               # 产品需求文档
-│   ├── api.md               # HTTP API 契约
-│   ├── queue.md             # Redis Streams 消息契约
-│   ├── billing.md           # Stripe 计费说明
-│   ├── operations.md        # 运营手册
-│   └── glossary.md          # 名词解释
-├── backend/                 # Java / Spring Boot（API + Worker）
-│   ├── pom.xml
-│   └── src/
-│       ├── main/java/com/previewship/
-│       │   ├── config/      # Spring 配置
-│       │   ├── web/         # Controller（plugin / console / stripe）
-│       │   ├── service/     # 业务服务
-│       │   ├── domain/      # 领域对象与枚举
-│       │   ├── repo/        # JPA Repository
-│       │   ├── integrations/# Vercel / Redis Streams / 并发控制
-│       │   └── worker/      # 异步部署执行器
-│       └── main/resources/
-│           ├── application.yml
-│           └── db/migration/ # Flyway
-├── console/                 # 前端控制台（Vite + React + i18n 8 语言）
-├── cli/                     # CLI 工具（npm: previewship）
-├── mcp/                     # MCP Server（npm: previewship-mcp）
-├── extension/               # VS Code / Cursor 扩展
-└── scripts/                 # 本地开发辅助脚本
-```
-
-## 本地开发
-
-### 前置依赖
-
-- Java 21+
-- Maven 3.9+
-- PostgreSQL 15+
-- Redis 7+
-- Node.js 20+（Console / CLI / MCP / Extension）
-
-### 启动后端
+### Quick Start
 
 ```bash
-cd backend
-mvn spring-boot:run
+# Set your API Key
+npx previewship login --key ps_live_YOUR_KEY
+
+# Deploy a directory
+npx previewship deploy ./dist
 ```
 
-### 启动 Worker（同工程，不同 profile）
+### Commands
+
+| Command | Description |
+|---------|-------------|
+| `previewship login [--key KEY]` | Set API Key for authentication |
+| `previewship deploy [path] [-n name] [--json]` | Deploy a directory and get a preview URL |
+| `previewship status <id> [--json]` | Check deployment status by ID |
+| `previewship usage [--json]` | Show remaining deployment quota |
+| `previewship whoami` | Display current configuration |
+
+### Options
 
 ```bash
-cd backend
-mvn spring-boot:run -Dspring-boot.run.profiles=worker
+# Deploy with a custom project name
+npx previewship deploy ./dist -n my-project
+
+# JSON output for AI agents and CI
+npx previewship deploy ./dist --json
+
+# Custom exclude patterns
+npx previewship deploy ./dist --exclude "*.map" --exclude "tests/**"
 ```
 
-### 启动控制台
+### Environment Variables
+
+| Variable | Description |
+|----------|-------------|
+| `PREVIEWSHIP_API_KEY` | API Key (overrides saved config) |
+| `PREVIEWSHIP_SERVER_URL` | Custom API server URL |
+| `CI` | Auto-enables JSON output in CI environments |
+| `NO_COLOR` | Disables colored output |
+
+### Programmatic Usage
+
+The CLI also exports its core functions for use as a library:
+
+```typescript
+import { deploy, getStatus, getUsage } from 'previewship'
+import { ApiClient } from 'previewship'
+import { packDirectory, DEFAULT_EXCLUDE_PATTERNS } from 'previewship'
+```
+
+---
+
+## MCP Server
+
+[Model Context Protocol](https://modelcontextprotocol.io) server that lets AI coding agents deploy previews as a native tool call. Works with Claude Code, Cursor, Windsurf, and any MCP-compatible client.
+
+### Setup
+
+**Claude Code** — add to `~/.claude/settings.json`:
+
+```json
+{
+  "mcpServers": {
+    "previewship": {
+      "command": "npx",
+      "args": ["-y", "previewship-mcp"],
+      "env": {
+        "PREVIEWSHIP_API_KEY": "ps_live_YOUR_KEY"
+      }
+    }
+  }
+}
+```
+
+**Cursor** — create `.cursor/mcp.json` in your project root:
+
+```json
+{
+  "mcpServers": {
+    "previewship": {
+      "command": "npx",
+      "args": ["-y", "previewship-mcp"],
+      "env": {
+        "PREVIEWSHIP_API_KEY": "ps_live_YOUR_KEY"
+      }
+    }
+  }
+}
+```
+
+**Windsurf** — add to `~/.codeium/windsurf/mcp_config.json`:
+
+```json
+{
+  "mcpServers": {
+    "previewship": {
+      "command": "npx",
+      "args": ["-y", "previewship-mcp"],
+      "env": {
+        "PREVIEWSHIP_API_KEY": "ps_live_YOUR_KEY"
+      }
+    }
+  }
+}
+```
+
+### Available Tools
+
+| Tool | Description | Parameters |
+|------|-------------|------------|
+| `deploy_preview` | Deploy a directory and get a preview URL | `path` (optional), `projectName` (optional), `excludePatterns` (optional) |
+| `check_deployment` | Check deployment status by ID | `deploymentId` (required) |
+| `show_usage` | Show remaining deployment quota | — |
+
+### Usage
+
+Once configured, simply ask your AI agent:
+
+> "Deploy this project to PreviewShip"
+> "Check the status of my last deployment"
+> "How many deploys do I have left today?"
+
+---
+
+## VS Code / Cursor Extension
+
+One-click deploy from VS Code or Cursor. Install from the [VS Code Marketplace](https://marketplace.visualstudio.com/items?itemName=previewship.previewship) or [Open VSX Registry](https://open-vsx.org/extension/previewship/previewship).
+
+### Install
+
+**Via Command Palette** (Ctrl+P / Cmd+P):
+
+```
+ext install previewship.previewship
+```
+
+**Via VSIX** (offline install):
 
 ```bash
-cd console
-npm install && npm run dev
+code --install-extension previewship-0.1.3.vsix
+# Or for Cursor:
+cursor --install-extension previewship-0.1.3.vsix
 ```
 
-### 环境变量
+### Commands
 
-| 变量 | 说明 |
-|------|------|
-| `DB_HOST` / `DB_PORT` / `DB_NAME` | PostgreSQL 连接信息 |
-| `DB_USER` / `DB_PASSWORD` | 数据库凭据 |
-| `REDIS_HOST` / `REDIS_PORT` / `REDIS_DB` | Redis 连接信息 |
-| `PREVIEWSHIP_SESSION_SECRET` | Session 签名密钥 |
-| `PREVIEWSHIP_SERVER_SALT` | API Key hash 盐值 |
-| `PREVIEWSHIP_STRIPE_SECRET_KEY` | Stripe 密钥 |
-| `PREVIEWSHIP_STRIPE_WEBHOOK_SECRET` | Stripe Webhook 签名密钥 |
-| `PREVIEWSHIP_VERCEL_TOKEN` | Vercel API Token |
+| Command | Description |
+|---------|-------------|
+| `PreviewShip: Set API Key` | Store your API Key securely (encrypted via VS Code Secrets API) |
+| `PreviewShip: Deploy Current Workspace` | Package, upload, and deploy your project |
+| `PreviewShip: Show Usage` | Display daily/monthly deployment quota |
 
-> Redis 密码建议放在 `application-local.yml` 中，避免 shell 转义问题。
+### Settings
 
-## K8s 部署（阿里云 ACK）
+| Setting | Default | Description |
+|---------|---------|-------------|
+| `previewship.serverUrl` | `https://api.previewship.com` | API server URL |
+| `previewship.excludePatterns` | `node_modules/**`, `.git/**`, `.env*`, etc. | File exclude patterns for packaging |
+| `previewship.pollIntervalMs` | `3000` | Deployment status polling interval (ms) |
+| `previewship.pollTimeoutMs` | `300000` | Polling timeout (ms) |
 
-组件清单：
-- `previewship-api` Deployment（多副本）
-- `previewship-worker` Deployment（可 HPA）
-- PostgreSQL（云 RDS）
-- Redis（云 Redis）
-- Ingress（Nginx / ALB）
+---
 
-详见 `k8s/` 目录。
+## Getting Started
 
-## 文档
+1. **Register** a free account at [previewship.com](https://previewship.com)
+2. **Create an API Key** from the console → API Keys page
+3. **Deploy** using any method above
+4. **Share** the preview link with your team
 
-- [产品需求文档](docs/prd.md)
-- [API 契约](docs/api.md)
-- [Redis Streams 消息契约](docs/queue.md)
-- [Stripe 计费说明](docs/billing.md)
-- [运营手册](docs/operations.md)
-- [名词解释](docs/glossary.md)
-- [开发计划](docs/plan.md)
+## Plans
+
+| | Free | Pro Monthly | Pro Yearly |
+|-|-----:|----------:|----------:|
+| **Price** | $0 | $9/mo | $84/yr ($7/mo) |
+| **Projects** | 1 | 8 | 12 |
+| **Daily Deploys** | 5 | 20 | 35 |
+| **Max Zip Size** | 15 MB | 50 MB | 80 MB |
+| **Preview Expiry** | 7 days | 30 days | 365 days |
+
+Free plan requires no credit card. Start deploying instantly.
+
+## Supported Frameworks
+
+Any static frontend output works — React, Vue, Svelte, Angular, Next.js (export), Nuxt (generate), Astro, vanilla HTML/CSS/JS, and more. Just make sure your build output contains an `index.html`.
+
+## Requirements
+
+- **Node.js** ≥ 20.0.0 (for CLI and MCP)
+- **VS Code** ≥ 1.85.0 (for extension)
+- An API Key from [previewship.com](https://previewship.com)
+
+## Links
+
+- **Website**: [previewship.com](https://previewship.com)
+- **Documentation**: [previewship.com/docs](https://previewship.com/docs)
+- **CLI on npm**: [npmjs.com/package/previewship](https://www.npmjs.com/package/previewship)
+- **MCP on npm**: [npmjs.com/package/previewship-mcp](https://www.npmjs.com/package/previewship-mcp)
+- **VS Code Marketplace**: [marketplace.visualstudio.com](https://marketplace.visualstudio.com/items?itemName=previewship.previewship)
 
 ## License
 
-Proprietary - All rights reserved.
+MIT — see [LICENSE](LICENSE) for details.
