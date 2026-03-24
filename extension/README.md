@@ -1,0 +1,140 @@
+# PreviewShip - Editor Extension
+
+> One-click deployment for previews, instant link sharing.
+
+PreviewShip allows you to deploy static websites to a preview environment with one click within Cursor / VS Code, giving you a shareable preview link immediately.
+
+Compatible with Cursor, VS Code, and all VS Code-based editors.
+
+![PreviewShip Demo](https://file.lumi.new/p425605428614770688/SPF2035964570609311744.gif)
+
+## Features
+
+- **One-click Deployment**: Execute a command to package and upload the current workspace, automatically deploying to Vercel CDN.
+- **Instant Sharing**: The preview link is automatically copied to the clipboard after a successful deployment.
+- **Status Bar Progress**: Real-time display of packaging, uploading, and building progress.
+- **Usage Query**: Check your remaining deployment quota at any time.
+- **Secure Storage**: API Keys are stored using editor encryption and are not leaked to configuration files.
+
+## Installation
+
+### Method 1: Install from .vsix file (Recommended)
+
+1. Download the latest `previewship-x.x.x.vsix` file.
+2. Installation:
+   - **Cursor**: Drag the .vsix file into the extensions panel, or `Cmd+Shift+P` → `Extensions: Install from VSIX…`
+   - **VS Code**: `Cmd+Shift+P` → `Extensions: Install from VSIX…`
+   - **Command Line**: `cursor --install-extension previewship-x.x.x.vsix`
+
+### Method 2: Install from Open VSX
+
+Search for `PreviewShip` in the editor extension panel to install.
+
+## Quick Start
+
+### 1. Get API Key
+
+1. Visit the [PreviewShip Console](https://previewship.com) to register an account.
+2. Go to the **API Keys** page and create a new API Key.
+3. Copy the generated Key (`ps_live_...`); it will only be displayed once.
+
+### 2. Set API Key
+
+1. Open the command palette (`Ctrl+Shift+P` / `Cmd+Shift+P`).
+2. Type `PreviewShip: Set API Key`.
+3. Paste your API Key.
+
+### 3. Deploy
+
+1. Open the project folder you want to deploy.
+2. Execute `PreviewShip: Deploy Current Workspace` in the command palette.
+3. Enter the project name (defaults to the folder name).
+4. Wait for packaging, uploading, and building to complete.
+5. The preview link is automatically copied to the clipboard!
+
+## Commands
+
+| Command | Description |
+|------|------|
+| `PreviewShip: Set API Key` | Set or update the API Key |
+| `PreviewShip: Deploy Current Workspace` | Deploy the current workspace |
+| `PreviewShip: Show Usage` | View remaining deployment quota |
+
+## Configuration
+
+| Setting | Default Value | Description |
+|------|--------|------|
+| `previewship.serverUrl` | `https://api.previewship.com` | API server address |
+| `previewship.excludePatterns` | See below | File patterns to exclude when packaging |
+| `previewship.pollIntervalMs` | `3000` | Interval for polling deployment status (ms) |
+| `previewship.pollTimeoutMs` | `300000` | Polling timeout (ms) |
+
+### Default Exclusion Patterns
+
+```json
+[
+  "node_modules/**",
+  ".git/**",
+  ".DS_Store",
+  "Thumbs.db",
+  ".env",
+  ".env.*",
+  "*.log",
+  ".vscode/**",
+  ".idea/**",
+  "__pycache__/**",
+  "*.pyc",
+  ".next/**",
+  ".nuxt/**",
+  "coverage/**",
+  ".cache/**"
+]
+```
+
+You can customize exclusion rules in the editor settings, e.g., to exclude source code other than `dist/`.
+
+## Supported Project Types
+
+PreviewShip is a **static file hosting** service and supports:
+
+- Pure HTML/CSS/JS websites
+- SPA framework build artifacts (React `build/`, Vue `dist/`)
+- Static site generator output (Hugo `public/`, Jekyll `_site/`)
+- HTML5 games/demos
+- Design exports (Figma HTML)
+- API documentation (Swagger UI, Redoc)
+
+**Note**: You must upload pre-built static files, not source code. It is recommended to run `npm run build` first, then deploy.
+
+## Plans
+
+| Item | Free | Pro Monthly | Pro Yearly |
+|------|------|---------|---------|
+| Price | $0 | $9/mo | $84/yr |
+| Daily Deploys | 5 | 20 | 35 |
+| Monthly Deploys | 20 | 200 | 350 |
+| Per-Upload Limit | 15MB | 50MB | 80MB |
+| Preview Expiry | 7 days | 30 days | 365 days |
+
+[View full plan comparison](https://previewship.com/billing)
+
+## FAQ
+
+### Deployment Failed: Invalid API Key
+Please ensure the API Key starts with `ps_live_` and has not been revoked. Create a new Key in the console.
+
+### Deployment Failed: File too large
+Check the `previewship.excludePatterns` setting to ensure large directories like `node_modules` and `.git` are excluded.
+
+### Deployment Failed: Insufficient quota
+The Free plan is limited to 5 deployments per day and 20 per month. Upgrade to Pro for more quota.
+
+### How do I deploy a React/Vue project?
+First, execute `npm run build` in the terminal, then use PreviewShip to deploy the `build/` or `dist/` directory.
+
+### Can both Cursor and VS Code be used?
+Yes. PreviewShip is compatible with all VS Code-based editors, including Cursor, VS Code, Windsurf, etc.
+
+## Feedback
+
+Encountered an issue? Please submit feedback via [GitHub Issues](https://github.com/previewship/previewship/issues).

@@ -1,0 +1,57 @@
+import archiver from 'archiver';
+import { PassThrough } from 'node:stream';
+
+/** 默认排除模式（与 VS Code 插件保持一致） */
+export const DEFAULT_EXCLUDE_PATTERNS = [
+  'node_modules/**',
+  '.git/**',
+  '.DS_Store',
+  'Thumbs.db',
+  '.env',
+  '.env.*',
+  '*.log',
+  '.vscode/**',
+  '.idea/**',
+  '__pycache__/**',
+  '*.pyc',
+  '.next/**',
+  '.nuxt/**',
+  'coverage/**',
+  '.cache/**',
+];
+
+/**
+ * 将目录打包为 zip Buffer
+ * @param dirPath 目录路径
+ * @param excludePatterns 排除的 glob 模式列表
+ * @returns zip 文件内容 Buffer 和文件数量
+ */
+export function packDirectory(dirPath: string, excludePatterns: string[]): Promise<{ buffer: Buffer; fileCount: number }> {
+  return new Promise((resolve, reject) => {
+    const chunks: Buffer[] = [];
+    const passthrough = new PassThrough();
+    passthrough.on('data', (chunk: Buffer) => chunks.push(chunk));
+    passthrough.on('end', () => {
+      resolve({
+        buffer: Buffer.concat(chunks),
+        fileCount: archive.pointer() > 0 ? entryCount : 0,
+      });
+    });
+
+    let entryCount = 0;
+    const archive = archiver('zip', { zlib: { level: 6 } });
+    archive.on('entry', () => entryCount++);
+    archive.on('error', reject);
+    archive.on('warning', (err) => {
+      if (err.code !== 'ENOENT') reject(err);
+    });
+
+    archive.pipe(passthrough);
+    archive.glob('**/*', {
+      cwd: dirPath,
+      ignore: excludePatterns,
+      dot: false,
+    });
+    archive.finalize();
+  });
+}

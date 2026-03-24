@@ -1,0 +1,21 @@
+# 默认忽略所有
+*
+
+# 只跟踪以下目录和文件
+!cli/
+!cli/**
+!mcp/
+!mcp/**
+!extension/
+!extension/**
+!README.md
+!.gitignore
+
+# 在跟踪目录内排除构建产物和依赖
+node_modules/
+dist/
+out/
+*.vsix
+*.tgz
+.DS_Store
+*.log

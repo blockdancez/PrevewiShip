@@ -1,0 +1,49 @@
+{
+  "name": "previewship",
+  "version": "1.0.0",
+  "description": "One-click deploy previews, instant shareable links. CLI for PreviewShip.",
+  "keywords": [
+    "deploy",
+    "preview",
+    "share",
+    "static",
+    "hosting",
+    "vercel",
+    "cli",
+    "mcp"
+  ],
+  "homepage": "https://previewship.com",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/previewship/previewship"
+  },
+  "license": "MIT",
+  "author": "PreviewShip",
+  "type": "module",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "bin": {
+    "previewship": "./bin/previewship.mjs"
+  },
+  "files": [
+    "dist",
+    "bin"
+  ],
+  "scripts": {
+    "build": "node esbuild.mjs",
+    "watch": "node esbuild.mjs --watch",
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {
+    "archiver": "^7.0.0"
+  },
+  "devDependencies": {
+    "@types/archiver": "^6.0.0",
+    "@types/node": "^20.0.0",
+    "esbuild": "^0.24.0",
+    "typescript": "^5.5.0"
+  },
+  "engines": {
+    "node": ">=20.0.0"
+  }
+}

@@ -1,0 +1,50 @@
+{
+  "name": "previewship-mcp",
+  "version": "1.0.0",
+  "description": "MCP Server for PreviewShip — deploy previews from AI coding agents (Claude Code, Cursor, Windsurf).",
+  "keywords": [
+    "mcp",
+    "model-context-protocol",
+    "deploy",
+    "preview",
+    "previewship",
+    "claude-code",
+    "cursor",
+    "windsurf",
+    "ai-agent"
+  ],
+  "homepage": "https://previewship.com",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/previewship/previewship"
+  },
+  "license": "MIT",
+  "author": "PreviewShip",
+  "type": "module",
+  "main": "./dist/index.js",
+  "bin": {
+    "previewship-mcp": "./dist/index.js"
+  },
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "node esbuild.mjs",
+    "watch": "node esbuild.mjs --watch",
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.27.0",
+    "archiver": "^7.0.0",
+    "previewship": "^1.0.0",
+    "zod": "^3.25.0"
+  },
+  "devDependencies": {
+    "@types/node": "^20.0.0",
+    "esbuild": "^0.24.0",
+    "typescript": "^5.5.0"
+  },
+  "engines": {
+    "node": ">=20.0.0"
+  }
+}
