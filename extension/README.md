@@ -137,4 +137,4 @@ Yes. PreviewShip is compatible with all VS Code-based editors, including Cursor,
 
 ## Feedback
 
-Encountered an issue? Please submit feedback via [GitHub Issues](https://github.com/previewship/previewship/issues).
+Encountered an issue? Please submit feedback via [GitHub Issues](https://github.com/blockdancez/PrevewiShip/issues).
