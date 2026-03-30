@@ -111,7 +111,7 @@ PreviewShip is a **static file hosting** service and supports:
 | Item | Free | Pro Monthly | Pro Yearly |
 |------|------|---------|---------|
 | Price | $0 | $9/mo | $84/yr |
-| Daily Deploys | 5 | 20 | 35 |
+| Daily Deploys | 5 | 30 | 40 |
 | Monthly Deploys | 20 | 200 | 350 |
 | Per-Upload Limit | 15MB | 50MB | 80MB |
 | Preview Expiry | 7 days | 30 days | 365 days |

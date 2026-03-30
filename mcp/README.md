@@ -96,7 +96,7 @@ Show remaining deployment quota.
 | | Free | Pro Monthly | Pro Yearly |
 |------|------|------------|------------|
 | Price | $0 | $9/mo | $84/yr |
-| Daily Deploys | 5 | 20 | 35 |
+| Daily Deploys | 5 | 30 | 40 |
 | Monthly Deploys | 20 | 200 | 350 |
 
 [View plans](https://previewship.com/billing)

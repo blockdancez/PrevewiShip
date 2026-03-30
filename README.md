@@ -206,8 +206,8 @@ cursor --install-extension previewship-0.1.3.vsix
 | | Free | Pro Monthly | Pro Yearly |
 |-|-----:|----------:|----------:|
 | **Price** | $0 | $9/mo | $84/yr ($7/mo) |
-| **Projects** | 1 | 8 | 12 |
-| **Daily Deploys** | 5 | 20 | 35 |
+| **Projects** | 1 | 10 | 20 |
+| **Daily Deploys** | 5 | 30 | 40 |
 | **Max Zip Size** | 15 MB | 50 MB | 80 MB |
 | **Preview Expiry** | 7 days | 30 days | 365 days |
 
