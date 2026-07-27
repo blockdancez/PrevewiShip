@@ -28,6 +28,13 @@ Use these links when listing PreviewShip in developer directories, MCP directori
 - [Share a Claude Code chat conversation](https://previewship.com/docs/share-claude-code-chat)
 - [Compare PreviewShip with Netlify Drop](https://previewship.com/compare/previewship-vs-netlify-drop)
 
+Spanish workflow guides:
+
+- [Desplegar una preview desde Claude Code](https://previewship.com/es/guides/deploy-from-claude-code)
+- [Publicar desde Visual Studio Code](https://previewship.com/es/docs/vscode)
+- [Desplegar una preview desde Cursor](https://previewship.com/es/guides/deploy-from-cursor)
+- [Publicar un archivo HTML en la web](https://previewship.com/es/guides/publish-html-file-to-web)
+
 ## Open Source Packages
 
 PreviewShip provides four open-source client packages:

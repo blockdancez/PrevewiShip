@@ -74,6 +74,8 @@ Use these links when listing PreviewShip in extension marketplaces, README files
 - [Upload an HTML file to a website](https://previewship.com/guides/upload-html-file-to-website)
 - [Host an HTML file online](https://previewship.com/guides/host-html-file-online)
 - [Compare PreviewShip with Netlify Drop](https://previewship.com/compare/previewship-vs-netlify-drop)
+- [Español: publicar desde Visual Studio Code](https://previewship.com/es/docs/vscode)
+- [Español: desplegar una preview desde Cursor](https://previewship.com/es/guides/deploy-from-cursor)
 
 ## Supported Inputs
 

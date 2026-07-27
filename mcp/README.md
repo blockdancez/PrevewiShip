@@ -28,6 +28,8 @@ Use these links when listing PreviewShip MCP in MCP directories, agent tool dire
 - [Upload an HTML file to a website](https://previewship.com/guides/upload-html-file-to-website)
 - [Host an HTML file online](https://previewship.com/guides/host-html-file-online)
 - [Compare PreviewShip with Netlify Drop](https://previewship.com/compare/previewship-vs-netlify-drop)
+- [Español: desplegar desde Claude Code con MCP o CLI](https://previewship.com/es/guides/deploy-from-claude-code)
+- [Español: desplegar una preview desde Cursor](https://previewship.com/es/guides/deploy-from-cursor)
 
 ## Setup
 
