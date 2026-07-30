@@ -246,7 +246,8 @@ Yes. Use `list_projects` to inspect projects, then `delete_project` with the exa
 | Eligible BR/PT regional price | $0 | $5.40/mo | $50.40/yr |
 | Daily Deploys | 5 | 50 | 80 |
 | Monthly Deploys | 20 | 300 | 500 |
-| Preview Expiry | 3 days | 30 days | 365 days |
+| Hosting | Expires after 3 days | Continuous while subscribed | Continuous while subscribed |
+| Current Hosting Guarantee | 3 days | 1 month, rolling | 12 months, rolling |
 | Version History | 3 retained versions | 10 retained versions | 40 retained versions |
 | Project Password Access | Not included | Included | Included |
 | Public/Password Access Toggle | Public only | Included | Included |

@@ -365,11 +365,12 @@ cursor --install-extension previewship-0.1.8.vsix
 | | Free | Pro Monthly | Pro Yearly |
 |-|-----:|----------:|----------:|
 | **Price** | $0 | $8.10/mo default offer (was $9/mo) | $75.60/yr default offer (was $84/yr, $6.30/mo) |
-| **Projects** | 1 | 10 | 20 |
+| **Projects** | 1 | 20 | 40 |
 | **Daily Deploys** | 5 | 50 | 80 |
 | **Monthly Deploys** | 20 | 300 | 500 |
 | **Max Zip Size** | 15 MB | 50 MB | 80 MB |
-| **Preview Expiry** | 3 days | 30 days | 365 days |
+| **Hosting** | Expires after 3 days | Continuous while subscribed | Continuous while subscribed |
+| **Current Hosting Guarantee** | 3 days | 1 month, rolling | 12 months, rolling |
 | **Version History** | 3 retained versions | 10 retained versions | 40 retained versions |
 | **Project Password Access** | Not included | Included | Included |
 | **Public/Password Access Toggle** | Public only | Included | Included |
