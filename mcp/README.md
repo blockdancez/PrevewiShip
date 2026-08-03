@@ -19,16 +19,17 @@ For a no-signup browser trial, use <https://previewship.com/try> to publish a 24
 
 PreviewShip hosts static output. It does not run `npm install`, install dependencies, or build raw source folders after upload. For React, Vue, Vite, Next, Astro, Svelte, Angular, or Nuxt projects, ask the agent to run the build first and deploy the generated static output.
 
-## Useful Deep Links
+## Guides
 
 Use these links when listing PreviewShip MCP in MCP directories, agent tool directories, README files, articles, or community answers:
 
-- [Share Claude HTML artifacts as live URLs](https://previewship.com/guides/share-claude-html-artifacts)
+- [Deploy from Claude Code](https://previewship.com/guides/deploy-from-claude-code?utm_source=npm&utm_medium=package&utm_campaign=core_content_cluster_0727)
+- [Deploy from Claude Code — Español](https://previewship.com/es/guides/deploy-from-claude-code?utm_source=npm&utm_medium=package&utm_campaign=core_content_cluster_0727)
+- [Share Claude HTML artifacts as live URLs](https://previewship.com/guides/share-claude-html-artifacts?utm_source=npm&utm_medium=package&utm_campaign=core_content_cluster_0727)
 - [Netlify Drop alternative for one HTML file or ZIP](https://previewship.com/guides/netlify-drop-alternative-for-html-file)
-- [Upload an HTML file to a website](https://previewship.com/guides/upload-html-file-to-website)
+- [Upload an HTML file to a website](https://previewship.com/guides/upload-html-file-to-website?utm_source=npm&utm_medium=package&utm_campaign=core_content_cluster_0727)
 - [Host an HTML file online](https://previewship.com/guides/host-html-file-online)
 - [Compare PreviewShip with Netlify Drop](https://previewship.com/compare/previewship-vs-netlify-drop)
-- [Español: desplegar desde Claude Code con MCP o CLI](https://previewship.com/es/guides/deploy-from-claude-code)
 - [Español: desplegar una preview desde Cursor](https://previewship.com/es/guides/deploy-from-cursor)
 
 ## Setup
@@ -136,9 +137,10 @@ Deploy a static website build output, single HTML, Markdown, or PDF document to 
 ## HTML Publishing Guides
 
 - [Publish HTML online](https://previewship.com/guides/publish-html-online)
-- [Share Claude HTML artifacts](https://previewship.com/guides/share-claude-html-artifacts)
+- [Deploy from Claude Code](https://previewship.com/guides/deploy-from-claude-code?utm_source=npm&utm_medium=package&utm_campaign=core_content_cluster_0727)
+- [Share Claude HTML artifacts](https://previewship.com/guides/share-claude-html-artifacts?utm_source=npm&utm_medium=package&utm_campaign=core_content_cluster_0727)
 - [Publish AI-generated HTML online](https://previewship.com/guides/publish-ai-generated-html)
-- [Upload HTML file to website](https://previewship.com/guides/upload-html-file-to-website)
+- [Upload HTML file to website](https://previewship.com/guides/upload-html-file-to-website?utm_source=npm&utm_medium=package&utm_campaign=core_content_cluster_0727)
 - [HTML file hosting](https://previewship.com/guides/html-file-hosting)
 - [Host HTML file online](https://previewship.com/guides/host-html-file-online)
 - [Upload HTML file online](https://previewship.com/guides/upload-html-file)

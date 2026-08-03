@@ -20,9 +20,10 @@ Use these links when listing PreviewShip in developer directories, MCP directori
 - [Browse product comparisons](https://previewship.com/compare)
 - [Verify product and pricing facts](https://previewship.com/facts)
 - [Deploy the minimal static example](https://github.com/blockdancez/PreviewShip/tree/main/examples/hello-previewship)
-- [Share Claude HTML artifacts as live URLs](https://previewship.com/guides/share-claude-html-artifacts)
+- [Deploy from Claude Code](https://previewship.com/guides/deploy-from-claude-code?utm_source=github&utm_medium=repository&utm_campaign=core_content_cluster_0727)
+- [Share Claude HTML artifacts as live URLs](https://previewship.com/guides/share-claude-html-artifacts?utm_source=github&utm_medium=repository&utm_campaign=core_content_cluster_0727)
 - [Netlify Drop alternative for one HTML file or ZIP](https://previewship.com/guides/netlify-drop-alternative-for-html-file)
-- [Upload an HTML file to a website](https://previewship.com/guides/upload-html-file-to-website)
+- [Upload an HTML file to a website](https://previewship.com/guides/upload-html-file-to-website?utm_source=github&utm_medium=repository&utm_campaign=core_content_cluster_0727)
 - [Host an HTML file online](https://previewship.com/guides/host-html-file-online)
 - [Share a Codex chat conversation](https://previewship.com/docs/share-codex-chat)
 - [Share a Claude Code chat conversation](https://previewship.com/docs/share-claude-code-chat)
@@ -30,7 +31,7 @@ Use these links when listing PreviewShip in developer directories, MCP directori
 
 Spanish workflow guides:
 
-- [Desplegar una preview desde Claude Code](https://previewship.com/es/guides/deploy-from-claude-code)
+- [Desplegar una preview desde Claude Code](https://previewship.com/es/guides/deploy-from-claude-code?utm_source=github&utm_medium=repository&utm_campaign=core_content_cluster_0727)
 - [Publicar desde Visual Studio Code](https://previewship.com/es/docs/vscode)
 - [Desplegar una preview desde Cursor](https://previewship.com/es/guides/deploy-from-cursor)
 - [Publicar un archivo HTML en la web](https://previewship.com/es/guides/publish-html-file-to-web)
@@ -74,14 +75,15 @@ PDF entry selection preserves existing site behavior: HTML wins over Markdown, a
 ## Publishing Workflows
 
 - [Publish HTML online](https://previewship.com/guides/publish-html-online)
-- [Share Claude HTML artifacts](https://previewship.com/guides/share-claude-html-artifacts)
+- [Deploy from Claude Code](https://previewship.com/guides/deploy-from-claude-code?utm_source=github&utm_medium=repository&utm_campaign=core_content_cluster_0727)
+- [Share Claude HTML artifacts](https://previewship.com/guides/share-claude-html-artifacts?utm_source=github&utm_medium=repository&utm_campaign=core_content_cluster_0727)
 - [Deploy a React/Vue build output](https://previewship.com/guides/deploy-a-dist-folder)
 - [HTML to page](https://previewship.com/guides/html-to-page)
 - [HTML to link](https://previewship.com/guides/html-to-link)
 - [Markdown to website](https://previewship.com/guides/markdown-to-website)
 - [Publish AI-generated HTML online](https://previewship.com/guides/publish-ai-generated-html)
 - [AI-generated HTML preview](https://previewship.com/guides/ai-generated-html-preview)
-- [Upload HTML file to website](https://previewship.com/guides/upload-html-file-to-website)
+- [Upload HTML file to website](https://previewship.com/guides/upload-html-file-to-website?utm_source=github&utm_medium=repository&utm_campaign=core_content_cluster_0727)
 - [HTML file hosting](https://previewship.com/guides/html-file-hosting)
 - [Host HTML file online](https://previewship.com/guides/host-html-file-online)
 - [Upload HTML file online](https://previewship.com/guides/upload-html-file)

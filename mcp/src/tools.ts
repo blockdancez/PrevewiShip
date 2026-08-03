@@ -9,7 +9,7 @@ import {
 } from 'previewship';
 
 const DEFAULT_SERVER_URL = 'https://api.previewship.com';
-const MCP_VERSION = '1.0.11';
+const MCP_VERSION = '1.0.13';
 
 type ProjectSummary = {
   id: number;
