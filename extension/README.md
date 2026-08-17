@@ -71,8 +71,7 @@ Use these links when listing PreviewShip in extension marketplaces, README files
 - [Verify product and pricing facts](https://previewship.com/facts)
 - [Share Claude HTML artifacts as live URLs](https://previewship.com/guides/share-claude-html-artifacts)
 - [Netlify Drop alternative for one HTML file or ZIP](https://previewship.com/guides/netlify-drop-alternative-for-html-file)
-- [Upload an HTML file to a website](https://previewship.com/guides/upload-html-file-to-website)
-- [Host an HTML file online](https://previewship.com/guides/host-html-file-online)
+- [Upload an HTML file to a website](https://previewship.com/guides/upload-html-file)
 - [Compare PreviewShip with Netlify Drop](https://previewship.com/compare/previewship-vs-netlify-drop)
 - [Español: publicar desde Visual Studio Code](https://previewship.com/es/docs/vscode)
 - [Español: desplegar una preview desde Cursor](https://previewship.com/es/guides/deploy-from-cursor)
@@ -88,22 +87,15 @@ Use these links when listing PreviewShip in extension marketplaces, README files
 | PDF `.pdf` file | Yes | Open it or right-click it in Explorer, then deploy with the native full-screen viewer |
 | Raw source folder with `package.json`, `src/`, and `node_modules` | No | Run the build first and deploy the generated output |
 
-## HTML Publishing Guides
+## Publishing Guides
 
-- [Publish HTML online](https://previewship.com/guides/publish-html-online)
+- [Upload HTML, ZIP, or build output](https://previewship.com/guides/upload-html-file)
 - [Share Claude HTML artifacts](https://previewship.com/guides/share-claude-html-artifacts)
 - [Publish AI-generated HTML online](https://previewship.com/guides/publish-ai-generated-html)
-- [Upload HTML file to website](https://previewship.com/guides/upload-html-file-to-website)
-- [HTML file hosting](https://previewship.com/guides/html-file-hosting)
-- [Host HTML file online](https://previewship.com/guides/host-html-file-online)
-- [Upload HTML file online](https://previewship.com/guides/upload-html-file)
 - [Deploy a React/Vue build output](https://previewship.com/guides/deploy-a-dist-folder)
-- [HTML to page](https://previewship.com/guides/html-to-page)
-- [HTML to link](https://previewship.com/guides/html-to-link)
 - [Markdown to website](https://previewship.com/guides/markdown-to-website)
-- [AI-generated HTML preview](https://previewship.com/guides/ai-generated-html-preview)
-- [Publish HTML file to web](https://previewship.com/guides/publish-html-file-to-web)
-- [Claude HTML artifact to URL](https://previewship.com/guides/claude-html-artifact-to-url)
+- [Upload and share a PDF](https://previewship.com/guides/upload-pdf-online)
+- [Preview hosting vs production hosting](https://previewship.com/guides/free-static-website-hosting)
 - [Netlify Drop alternative for one HTML file or ZIP](https://previewship.com/guides/netlify-drop-alternative-for-html-file)
 - [Compare PreviewShip with Netlify Drop](https://previewship.com/compare/previewship-vs-netlify-drop)
 

@@ -46,19 +46,14 @@ PreviewShip 不是源码构建平台。React、Vue、Vite、Next、Astro、Svelt
 
 PDF 入口选择会保持现有站点行为：HTML 优先于 Markdown，Markdown 优先于 PDF。只有一个 PDF 时会自动生成全屏入口；如果压缩包内有多个 PDF 且没有 HTML 或 Markdown，请把根入口命名为 `index.pdf`，或只上传一个 PDF。
 
-## HTML 发布与托管指南
+## 发布工作流
 
-- [在线发布 HTML](https://previewship.com/guides/publish-html-online)
+- [上传 HTML、ZIP 或构建产物](https://previewship.com/guides/upload-html-file)
 - [分享 Claude HTML artifacts](https://previewship.com/guides/share-claude-html-artifacts)
 - [发布 AI 生成的 HTML](https://previewship.com/guides/publish-ai-generated-html)
-- [HTML 转网页](https://previewship.com/guides/html-to-page)
-- [上传 HTML 文件到网站](https://previewship.com/guides/upload-html-file-to-website)
-- [HTML 文件托管](https://previewship.com/guides/html-file-hosting)
-- [在线托管 HTML 文件](https://previewship.com/guides/host-html-file-online)
-- [在线上传 HTML 文件](https://previewship.com/guides/upload-html-file)
-- [粘贴 HTML 并获得 URL](https://previewship.com/guides/paste-html-get-url)
+- [上传并分享 PDF](https://previewship.com/guides/upload-pdf-online)
+- [预览托管与生产托管的区别](https://previewship.com/guides/free-static-website-hosting)
 - [Netlify Drop 替代方案](https://previewship.com/compare/previewship-vs-netlify-drop)
-- [把 ChatGPT HTML 变成网站 URL](https://previewship.com/guides/chatgpt-html-to-website)
 - [分享 Codex 会话](https://previewship.com/docs/share-codex-chat)
 - [分享 Claude Code 会话](https://previewship.com/docs/share-claude-code-chat)
 

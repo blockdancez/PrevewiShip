@@ -46,8 +46,7 @@ Important: deploy static build output, not a raw source-code folder. For React, 
 
 - [Share Claude HTML artifacts as live URLs](https://previewship.com/guides/share-claude-html-artifacts)
 - [Netlify Drop alternative for one HTML file or ZIP](https://previewship.com/guides/netlify-drop-alternative-for-html-file)
-- [Upload an HTML file to a website](https://previewship.com/guides/upload-html-file-to-website)
-- [Host an HTML file online](https://previewship.com/guides/host-html-file-online)
+- [Upload an HTML file to a website](https://previewship.com/guides/upload-html-file)
 - [Share a Codex chat conversation](https://previewship.com/docs/share-codex-chat)
 - [Share a Claude Code chat conversation](https://previewship.com/docs/share-claude-code-chat)
 - [Compare PreviewShip with Netlify Drop](https://previewship.com/compare/previewship-vs-netlify-drop)
@@ -64,22 +63,14 @@ Important: deploy static build output, not a raw source-code folder. For React, 
 | Raw source folder with `package.json` and `src/` | No | Build first, then deploy the generated output |
 | `node_modules` or dependency folders | No | Excluded by default and should not be uploaded |
 
-## HTML Publishing Guides
+## Publishing Guides
 
-- [Publish HTML online](https://previewship.com/guides/publish-html-online)
+- [Upload HTML, ZIP, or build output](https://previewship.com/guides/upload-html-file)
 - [Share Claude HTML artifacts](https://previewship.com/guides/share-claude-html-artifacts)
 - [Publish AI-generated HTML online](https://previewship.com/guides/publish-ai-generated-html)
-- [Upload HTML file to website](https://previewship.com/guides/upload-html-file-to-website)
-- [HTML file hosting](https://previewship.com/guides/html-file-hosting)
-- [Host HTML file online](https://previewship.com/guides/host-html-file-online)
-- [Upload HTML file online](https://previewship.com/guides/upload-html-file)
-- [HTML to page](https://previewship.com/guides/html-to-page)
-- [HTML to link](https://previewship.com/guides/html-to-link)
 - [Markdown to website](https://previewship.com/guides/markdown-to-website)
-- [AI-generated HTML preview](https://previewship.com/guides/ai-generated-html-preview)
-- [Codex website preview](https://previewship.com/guides/codex-website-preview)
-- [Publish HTML file to web](https://previewship.com/guides/publish-html-file-to-web)
-- [HTML deployer](https://previewship.com/guides/html-deployer)
+- [Upload and share a PDF](https://previewship.com/guides/upload-pdf-online)
+- [Preview hosting vs production hosting](https://previewship.com/guides/free-static-website-hosting)
 - [Netlify Drop alternative for one HTML file or ZIP](https://previewship.com/guides/netlify-drop-alternative-for-html-file)
 - [Compare PreviewShip with Netlify Drop](https://previewship.com/compare/previewship-vs-netlify-drop)
 
