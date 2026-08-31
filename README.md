@@ -20,17 +20,17 @@ Use these links when listing PreviewShip in developer directories, MCP directori
 - [Browse product comparisons](https://previewship.com/compare)
 - [Verify product and pricing facts](https://previewship.com/facts)
 - [Deploy the minimal static example](https://github.com/blockdancez/PreviewShip/tree/main/examples/hello-previewship)
-- [Deploy from Claude Code](https://previewship.com/guides/deploy-from-claude-code?utm_source=github&utm_medium=repository&utm_campaign=core_content_cluster_0727)
-- [Share Claude HTML artifacts as live URLs](https://previewship.com/guides/share-claude-html-artifacts?utm_source=github&utm_medium=repository&utm_campaign=core_content_cluster_0727)
+- [Deploy from Claude Code](https://previewship.com/guides/deploy-from-claude-code?utm_source=github&utm_medium=repository&utm_campaign=core_content_cluster_0727&utm_content=owned_github_claude_en)
+- [Share Claude HTML artifacts as live URLs](https://previewship.com/guides/share-claude-html-artifacts?utm_source=github&utm_medium=repository&utm_campaign=core_content_cluster_0727&utm_content=owned_github_claude_artifact)
 - [Netlify Drop alternative for one HTML file or ZIP](https://previewship.com/guides/netlify-drop-alternative-for-html-file)
-- [Upload an HTML file to a website](https://previewship.com/guides/upload-html-file?utm_source=github&utm_medium=repository&utm_campaign=core_content_cluster_0727)
+- [Upload an HTML file to a website](https://previewship.com/guides/upload-html-file?utm_source=github&utm_medium=repository&utm_campaign=core_content_cluster_0727&utm_content=owned_github_about_upload)
 - [Share a Codex chat conversation](https://previewship.com/docs/share-codex-chat)
 - [Share a Claude Code chat conversation](https://previewship.com/docs/share-claude-code-chat)
 - [Compare PreviewShip with Netlify Drop](https://previewship.com/compare/previewship-vs-netlify-drop)
 
 Spanish workflow guides:
 
-- [Desplegar una preview desde Claude Code](https://previewship.com/es/guides/deploy-from-claude-code?utm_source=github&utm_medium=repository&utm_campaign=core_content_cluster_0727)
+- [Desplegar una preview desde Claude Code](https://previewship.com/es/guides/deploy-from-claude-code?utm_source=github&utm_medium=repository&utm_campaign=core_content_cluster_0727&utm_content=owned_github_claude_es)
 - [Publicar desde Visual Studio Code](https://previewship.com/es/docs/vscode)
 - [Desplegar una preview desde Cursor](https://previewship.com/es/guides/deploy-from-cursor)
 - [Publicar un archivo HTML en la web](https://previewship.com/es/guides/publish-html-file-to-web)
@@ -73,9 +73,9 @@ PDF entry selection preserves existing site behavior: HTML wins over Markdown, a
 
 ## Publishing Workflows
 
-- [Upload an HTML file, ZIP, or build output](https://previewship.com/guides/upload-html-file?utm_source=github&utm_medium=repository&utm_campaign=core_content_cluster_0727)
-- [Deploy from Claude Code](https://previewship.com/guides/deploy-from-claude-code?utm_source=github&utm_medium=repository&utm_campaign=core_content_cluster_0727)
-- [Share Claude HTML artifacts](https://previewship.com/guides/share-claude-html-artifacts?utm_source=github&utm_medium=repository&utm_campaign=core_content_cluster_0727)
+- [Upload an HTML file, ZIP, or build output](https://previewship.com/guides/upload-html-file?utm_source=github&utm_medium=repository&utm_campaign=core_content_cluster_0727&utm_content=owned_github_about_upload)
+- [Deploy from Claude Code](https://previewship.com/guides/deploy-from-claude-code?utm_source=github&utm_medium=repository&utm_campaign=core_content_cluster_0727&utm_content=owned_github_claude_en)
+- [Share Claude HTML artifacts](https://previewship.com/guides/share-claude-html-artifacts?utm_source=github&utm_medium=repository&utm_campaign=core_content_cluster_0727&utm_content=owned_github_claude_artifact)
 - [Deploy a React/Vue build output](https://previewship.com/guides/deploy-a-dist-folder)
 - [Markdown to website](https://previewship.com/guides/markdown-to-website)
 - [Upload and share a PDF](https://previewship.com/guides/upload-pdf-online)

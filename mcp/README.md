@@ -23,11 +23,11 @@ PreviewShip hosts static output. It does not run `npm install`, install dependen
 
 Use these links when listing PreviewShip MCP in MCP directories, agent tool directories, README files, articles, or community answers:
 
-- [Deploy from Claude Code](https://previewship.com/guides/deploy-from-claude-code?utm_source=npm&utm_medium=package&utm_campaign=core_content_cluster_0727)
-- [Deploy from Claude Code — Español](https://previewship.com/es/guides/deploy-from-claude-code?utm_source=npm&utm_medium=package&utm_campaign=core_content_cluster_0727)
-- [Share Claude HTML artifacts as live URLs](https://previewship.com/guides/share-claude-html-artifacts?utm_source=npm&utm_medium=package&utm_campaign=core_content_cluster_0727)
+- [Deploy from Claude Code](https://previewship.com/guides/deploy-from-claude-code?utm_source=npm&utm_medium=package&utm_campaign=core_content_cluster_0727&utm_content=owned_npm_claude_en)
+- [Deploy from Claude Code — Español](https://previewship.com/es/guides/deploy-from-claude-code?utm_source=npm&utm_medium=package&utm_campaign=core_content_cluster_0727&utm_content=owned_npm_claude_es)
+- [Share Claude HTML artifacts as live URLs](https://previewship.com/guides/share-claude-html-artifacts?utm_source=npm&utm_medium=package&utm_campaign=core_content_cluster_0727&utm_content=owned_npm_claude_artifact)
 - [Netlify Drop alternative for one HTML file or ZIP](https://previewship.com/guides/netlify-drop-alternative-for-html-file)
-- [Upload an HTML file to a website](https://previewship.com/guides/upload-html-file?utm_source=npm&utm_medium=package&utm_campaign=core_content_cluster_0727)
+- [Upload an HTML file to a website](https://previewship.com/guides/upload-html-file?utm_source=npm&utm_medium=package&utm_campaign=core_content_cluster_0727&utm_content=owned_npm_upload_html)
 - [Compare PreviewShip with Netlify Drop](https://previewship.com/compare/previewship-vs-netlify-drop)
 - [Español: desplegar una preview desde Cursor](https://previewship.com/es/guides/deploy-from-cursor)
 
@@ -135,9 +135,9 @@ Deploy a static website build output, single HTML, Markdown, or PDF document to 
 
 ## Publishing Guides
 
-- [Upload HTML, ZIP, or build output](https://previewship.com/guides/upload-html-file?utm_source=npm&utm_medium=package&utm_campaign=core_content_cluster_0727)
-- [Deploy from Claude Code](https://previewship.com/guides/deploy-from-claude-code?utm_source=npm&utm_medium=package&utm_campaign=core_content_cluster_0727)
-- [Share Claude HTML artifacts](https://previewship.com/guides/share-claude-html-artifacts?utm_source=npm&utm_medium=package&utm_campaign=core_content_cluster_0727)
+- [Upload HTML, ZIP, or build output](https://previewship.com/guides/upload-html-file?utm_source=npm&utm_medium=package&utm_campaign=core_content_cluster_0727&utm_content=owned_npm_upload_html)
+- [Deploy from Claude Code](https://previewship.com/guides/deploy-from-claude-code?utm_source=npm&utm_medium=package&utm_campaign=core_content_cluster_0727&utm_content=owned_npm_claude_en)
+- [Share Claude HTML artifacts](https://previewship.com/guides/share-claude-html-artifacts?utm_source=npm&utm_medium=package&utm_campaign=core_content_cluster_0727&utm_content=owned_npm_claude_artifact)
 - [Publish AI-generated HTML online](https://previewship.com/guides/publish-ai-generated-html)
 - [Markdown to website](https://previewship.com/guides/markdown-to-website)
 - [Upload and share a PDF](https://previewship.com/guides/upload-pdf-online)

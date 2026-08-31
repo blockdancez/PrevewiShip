@@ -1,6 +1,6 @@
 {
   "name": "previewship-mcp",
-  "version": "1.0.13",
+  "version": "1.0.14",
   "description": "MCP server for deploying browser-ready HTML files and static build output to shareable PreviewShip review URLs.",
   "keywords": [
     "mcp",
