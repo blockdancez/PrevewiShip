@@ -16,10 +16,10 @@ owned_github_claude_artifact,github,owned_github_claude_artifact,published,2026-
 owned_github_claude_en,github,owned_github_claude_en,published,2026-08-31,https://github.com/blockdancez/PreviewShip/blob/main/README.md,https://previewship.com/guides/deploy-from-claude-code,pending,pending,pending
 owned_github_claude_es,github,owned_github_claude_es,published,2026-08-31,https://github.com/blockdancez/PreviewShip/blob/main/README.md,https://previewship.com/es/guides/deploy-from-claude-code,pending,pending,pending
 owned_mcp_directory_docs_en,mcp_directory,owned_mcp_directory_docs_en,published_pending_verification,2026-08-31,,https://previewship.com/docs/mcp,pending,pending,pending
-owned_npm_claude_artifact,npm,owned_npm_claude_artifact,published_pending_verification,2026-08-31,,https://previewship.com/guides/share-claude-html-artifacts,pending,pending,pending
-owned_npm_claude_en,npm,owned_npm_claude_en,published_pending_verification,2026-08-31,,https://previewship.com/guides/deploy-from-claude-code,pending,pending,pending
-owned_npm_claude_es,npm,owned_npm_claude_es,published_pending_verification,2026-08-31,,https://previewship.com/es/guides/deploy-from-claude-code,pending,pending,pending
-owned_npm_upload_html,npm,owned_npm_upload_html,published_pending_verification,2026-08-31,,https://previewship.com/guides/upload-html-file,pending,pending,pending
+owned_npm_claude_artifact,npm,owned_npm_claude_artifact,published,2026-08-31,https://registry.npmjs.org/previewship-mcp/1.0.14,https://previewship.com/guides/share-claude-html-artifacts,pending,pending,pending
+owned_npm_claude_en,npm,owned_npm_claude_en,published,2026-08-31,https://registry.npmjs.org/previewship-mcp/1.0.14,https://previewship.com/guides/deploy-from-claude-code,pending,pending,pending
+owned_npm_claude_es,npm,owned_npm_claude_es,published,2026-08-31,https://registry.npmjs.org/previewship-mcp/1.0.14,https://previewship.com/es/guides/deploy-from-claude-code,pending,pending,pending
+owned_npm_upload_html,npm,owned_npm_upload_html,published,2026-08-31,https://registry.npmjs.org/previewship-mcp/1.0.14,https://previewship.com/guides/upload-html-file,pending,pending,pending
 owned_openvsx_docs_en,openvsx,owned_openvsx_docs_en,published_pending_verification,2026-08-31,,https://previewship.com/docs/vscode,pending,pending,pending
 owned_vscode_marketplace_docs_en,vscode_marketplace,owned_vscode_marketplace_docs_en,published_pending_verification,2026-08-31,,https://previewship.com/docs/vscode,pending,pending,pending
 owned_vscode_marketplace_docs_es,vscode_marketplace,owned_vscode_marketplace_docs_es,published_pending_verification,2026-08-31,,https://previewship.com/es/docs/vscode,pending,pending,pending
