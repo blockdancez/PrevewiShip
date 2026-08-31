@@ -11,10 +11,10 @@ article_es_04_publish_html_file,devto,article_es_04_publish_html_file,published_
 hackernews_01_show_hn,hackernews,hackernews_01_show_hn,published_pending_verification,2026-08-31,,https://previewship.com/,pending,pending,pending
 indiehackers_01_content_cluster,indiehackers,indiehackers_01_content_cluster,published_pending_verification,2026-08-31,,https://previewship.com/guides/upload-html-file,pending,pending,pending
 newsletter_01_upload,newsletter,newsletter_01_upload,published_pending_verification,2026-08-31,,https://previewship.com/guides/upload-html-file,pending,pending,pending
-owned_github_about_upload,github,owned_github_about_upload,published_pending_verification,2026-08-31,,https://previewship.com/guides/upload-html-file,pending,pending,pending
-owned_github_claude_artifact,github,owned_github_claude_artifact,published_pending_verification,2026-08-31,,https://previewship.com/guides/share-claude-html-artifacts,pending,pending,pending
-owned_github_claude_en,github,owned_github_claude_en,published_pending_verification,2026-08-31,,https://previewship.com/guides/deploy-from-claude-code,pending,pending,pending
-owned_github_claude_es,github,owned_github_claude_es,published_pending_verification,2026-08-31,,https://previewship.com/es/guides/deploy-from-claude-code,pending,pending,pending
+owned_github_about_upload,github,owned_github_about_upload,published,2026-08-31,https://github.com/blockdancez/PreviewShip/blob/main/README.md,https://previewship.com/guides/upload-html-file,pending,pending,pending
+owned_github_claude_artifact,github,owned_github_claude_artifact,published,2026-08-31,https://github.com/blockdancez/PreviewShip/blob/main/README.md,https://previewship.com/guides/share-claude-html-artifacts,pending,pending,pending
+owned_github_claude_en,github,owned_github_claude_en,published,2026-08-31,https://github.com/blockdancez/PreviewShip/blob/main/README.md,https://previewship.com/guides/deploy-from-claude-code,pending,pending,pending
+owned_github_claude_es,github,owned_github_claude_es,published,2026-08-31,https://github.com/blockdancez/PreviewShip/blob/main/README.md,https://previewship.com/es/guides/deploy-from-claude-code,pending,pending,pending
 owned_mcp_directory_docs_en,mcp_directory,owned_mcp_directory_docs_en,published_pending_verification,2026-08-31,,https://previewship.com/docs/mcp,pending,pending,pending
 owned_npm_claude_artifact,npm,owned_npm_claude_artifact,published_pending_verification,2026-08-31,,https://previewship.com/guides/share-claude-html-artifacts,pending,pending,pending
 owned_npm_claude_en,npm,owned_npm_claude_en,published_pending_verification,2026-08-31,,https://previewship.com/guides/deploy-from-claude-code,pending,pending,pending
